@@ -170,7 +170,7 @@
 /*------------------ RESPONSIVE DESIGN ------------------*/
 /*-------------------------------------------------------*/
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 1000px) {
   .department-section-title {
     font-size: 1rem;
   }
