@@ -1,0 +1,184 @@
+/*-----------------------------------------------------------------*/
+/*------------------------- NAVBAR STYLES -------------------------*/
+/*-----------------------------------------------------------------*/
+
+#navbar-mobile {
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  background-color: #000055;
+  align-items: center;
+  position: relative;
+  padding: 2rem 1rem;
+  display: grid;
+}
+
+#navbar-mobile .navbar-image {
+  width: 225px;
+}
+
+#navbar-mobile .navbar-menu-image {
+  width: 60px;
+}
+
+#navbar-mobile .navbar-links-menu {
+  background: linear-gradient(to right, #c83249, #23074d);
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  padding: 1.5rem;
+  margin: 0 auto;
+  display: grid;
+  width: 250px;
+  z-index: 10;
+  top: 8.5rem;
+  gap: 1rem;
+  right: 0;
+  left: 0;
+}
+
+#navbar-mobile .navbar-link {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#navbar-mobile .navbar-link.events {
+  transition: background-color 450ms, scale 450ms;
+  border: 2px solid #fff;
+  padding: 0.5rem 4rem;
+  border-radius: 40px;
+  width: fit-content;
+}
+
+#navbar-mobile .navbar-link h1 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  position: relative;
+  font-weight: 300;
+  color: #fff;
+}
+
+#navbar-mobile .navbar-link:not(.events) h1 {
+  transition: letter-spacing 450ms;
+}
+
+#navbar-mobile .navbar-link.events h1 {
+  transition: color 450ms;
+}
+
+#navbar-mobile .navbar-link:not(.events) h1:after {
+  background-color: #fff;
+  transition: width 450ms;
+  position: absolute;
+  margin: 0 auto;
+  height: 1.5px;
+  content: "";
+  width: 0%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/*-------------------------------------------*/
+/*--------------- TRANSITIONS ---------------*/
+/*-------------------------------------------*/
+
+#navbar-mobile .navbar-link:not(.events):hover h1 {
+  letter-spacing: 2px;
+}
+
+#navbar-mobile .navbar-link:not(.events):hover h1::after {
+  width: 100%;
+}
+
+#navbar-mobile .navbar-link.events:hover {
+  background-color: #fff;
+  scale: 1.1;
+}
+
+#navbar-mobile .navbar-link.events:hover h1 {
+  color: #000;
+}
+
+/*---------------------------------------------------*/
+/*-------------------- ANIMATION --------------------*/
+/*---------------------------------------------------*/
+
+.open-menu {
+  animation: OpenMenu 250ms forwards ease-in-out;
+}
+
+.close-menu {
+  animation: CloseMenu 250ms forwards ease-in-out;
+}
+
+@keyframes OpenMenu {
+  0% {
+    pointer-events: none;
+    translate: 0 -10px;
+    opacity: 0;
+  }
+
+  100% {
+    pointer-events: all;
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+@keyframes CloseMenu {
+  0% {
+    pointer-events: all;
+    translate: 0 0;
+    opacity: 1;
+  }
+
+  100% {
+    pointer-events: none;
+    translate: 0 -10px;
+    opacity: 0;
+  }
+}
+
+/*-------------------------------------------------------*/
+/*------------------ RESPONSIVE DESIGN ------------------*/
+/*-------------------------------------------------------*/
+
+@media all and (min-width: 1000px) {
+  #navbar-mobile {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  #navbar-desktop {
+    display: none;
+  }
+
+  #navbar-mobile {
+    display: grid;
+  }
+
+  .navbar-links-menu {
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .navbar-link h1 {
+    font-size: 1rem;
+  }
+
+  #navbar-mobile .navbar-image {
+    width: 150px;
+  }
+
+  .navbar-links-container {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+/*-----------------------------------------------------------*/
+/*----------------------- END OF CSS  -----------------------*/
+/*-----------------------------------------------------------*/

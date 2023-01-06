@@ -1,4 +1,5 @@
 @import url("./common/navbar.css");
+@import url("./common/navbar-mobile.css");
 @import url("./home/events.css");
 @import url("./home/department.css");
 @import url("./home/staff.css");
