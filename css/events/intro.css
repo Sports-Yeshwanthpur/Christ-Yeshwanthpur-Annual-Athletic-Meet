@@ -65,7 +65,7 @@
 
 .intro-description {
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 2rem;
   cursor: default;
   color: #fff;
@@ -92,6 +92,85 @@
 
 .intro-link-image {
   width: 20px;
+}
+
+/*-----------------------------------------------------*/
+/*----------------- RESPONSIVE DESIGN -----------------*/
+/*-----------------------------------------------------*/
+
+@media all and (max-width: 1220px) {
+  .intro-container {
+    width: 800px;
+  }
+
+  .intro-text-container {
+    gap: 1.25rem;
+  }
+
+  .intro-title {
+    line-height: 1.1;
+  }
+
+  .intro-description {
+    line-height: 1.2;
+  }
+
+  .intro-link {
+    margin-top: -0.5rem;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .intro-container {
+    width: 400px;
+  }
+
+  .intro-title {
+    font-size: 1.8rem;
+  }
+
+  .intro-description {
+    font-size: 1rem;
+  }
+
+  .intro-foreground {
+    width: 200px;
+  }
+
+  .intro-link {
+    padding: 0.25rem 2rem;
+  }
+
+  .intro-link-text {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .intro-container {
+    width: 250px;
+  }
+
+  .intro-title {
+    font-size: 1rem;
+  }
+
+  .intro-description {
+    font-size: 0.65rem;
+  }
+
+  .intro-foreground {
+    width: 100px;
+  }
+
+  .intro-link {
+    padding: 0.25rem 2rem;
+    margin-top: -1rem;
+  }
+
+  .intro-link-text {
+    font-size: 0.65rem;
+  }
 }
 
 /*--------------------------------------------------*/

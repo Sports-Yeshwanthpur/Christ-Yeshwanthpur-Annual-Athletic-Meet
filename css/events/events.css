@@ -18,6 +18,7 @@
 .events-section-title {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 10px;
+  text-align: center;
   font-size: 4.5rem;
   cursor: default;
 }
@@ -72,6 +73,51 @@
 
 .events-list-container:hover {
   translate: 0 -10px;
+}
+
+/*-----------------------------------------------------*/
+/*----------------- RESPONSIVE DESIGN -----------------*/
+/*-----------------------------------------------------*/
+
+@media all and (max-width: 1370px) {
+  #events-section.races {
+    grid-template-columns: auto;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+
+  #events-section {
+    padding: 1rem 2rem 0 2rem;
+  }
+
+  .events-section-title.races {
+    grid-column: span 1;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .events-section-title {
+    font-size: 3rem;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .events-section-title {
+    font-size: 1.5rem;
+  }
+
+  .events-list-name {
+    font-size: 1.5rem;
+  }
+
+  .event-name {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 370px) {
+  .events-section-title {
+    font-size: 1rem;
+  }
 }
 
 /*--------------------------------------------------*/
