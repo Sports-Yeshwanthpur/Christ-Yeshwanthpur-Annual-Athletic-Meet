@@ -8,12 +8,12 @@
   background-color: #000055;
   align-items: center;
   position: relative;
-  padding: 2rem 1rem;
   display: grid;
+  padding: 3rem;
 }
 
 #navbar-mobile .navbar-image {
-  width: 225px;
+  width: 200px;
 }
 
 #navbar-mobile .navbar-menu-image {
@@ -146,13 +146,13 @@
 /*------------------ RESPONSIVE DESIGN ------------------*/
 /*-------------------------------------------------------*/
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 850px) {
   #navbar-mobile {
     display: none;
   }
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 850px) {
   #navbar-desktop {
     display: none;
   }
@@ -170,12 +170,14 @@
     font-size: 1rem;
   }
 
-  #navbar-mobile .navbar-image {
-    width: 150px;
-  }
-
   .navbar-links-container {
     grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media all and (max-width: 405px) {
+  #navbar-mobile .navbar-menu-image {
+    width: 30px;
   }
 }
 

@@ -15,6 +15,7 @@
   font-family: "Montserrat", sans-serif;
   letter-spacing: 15px;
   margin-bottom: 2rem;
+  font-weight: 1000;
   text-align: center;
   font-size: 3rem;
   cursor: default;
@@ -170,19 +171,17 @@
 /*------------------ RESPONSIVE DESIGN ------------------*/
 /*-------------------------------------------------------*/
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1480px) {
   .department-section-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .department-row:nth-of-type(1) {
     grid-template-columns: auto;
-    justify-content: center;
-    align-items: stretch;
-    display: grid;
-    gap: 2rem;
   }
+}
 
+@media all and (max-width: 1000px) {
   .department-row:nth-of-type(2) {
     grid-template-columns: auto;
     justify-content: center;
@@ -190,17 +189,17 @@
     display: grid;
     gap: 2rem;
   }
+}
+
+@media all and (max-width: 500px) {
+  .department-section-title {
+    letter-spacing: 5px;
+    margin-bottom: 0rem;
+    font-size: 2rem;
+  }
 
   .department-container {
-    width: 200px;
-  }
-
-  .department-link-text {
-    font-size: 1rem;
-  }
-
-  .department-link-image {
-    width: 20px;
+    width: 300px;
   }
 }
 

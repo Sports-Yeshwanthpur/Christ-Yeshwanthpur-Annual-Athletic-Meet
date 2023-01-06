@@ -1,4 +1,5 @@
-@import url("./common/navbar.css");
+@import url("./common/navbar-desktop.css");
+@import url("./common/navbar-mobile.css");
 
 * {
   scroll-behavior: smooth;

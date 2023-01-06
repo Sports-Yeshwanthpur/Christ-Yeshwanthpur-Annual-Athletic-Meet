@@ -16,7 +16,7 @@
   letter-spacing: 15px;
   margin-bottom: 2rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   cursor: default;
 }
 
@@ -131,7 +131,7 @@
 
 @media all and (max-width: 1000px) {
   .staff-section-title {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .staff-row {
@@ -141,17 +141,29 @@
     display: grid;
     gap: 2rem;
   }
+}
 
-  .staff-container {
-    width: 200px;
+@media all and (max-width: 800px) {
+  .staff-section-title {
+    font-size: 1em;
   }
+}
 
-  .staff-link-text {
+@media all and (max-width: 500px) {
+  .staff-section-title {
     font-size: 1rem;
   }
 
-  .staff-link-image {
-    width: 20px;
+  .staff-container {
+    width: 300px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .staff-section-title {
+    margin-bottom: 0rem;
+    letter-spacing: 0px;
+    font-size: 1rem;
   }
 }
 

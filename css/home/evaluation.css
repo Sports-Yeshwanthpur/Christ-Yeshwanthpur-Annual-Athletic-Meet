@@ -68,13 +68,20 @@
 }
 
 .evaluation-warning {
+  background: linear-gradient(to right, #c83249, #23074d);
   font-family: "Poppins", sans-serif;
   transition: scale 450ms;
+  padding: 0.5rem 1rem;
+  letter-spacing: 1px;
   grid-column: span 4;
+  border-radius: 5px;
   text-align: center;
+  width: fit-content;
   font-weight: 500;
   cursor: pointer;
   font-size: 1rem;
+  margin: 0 auto;
+  color: #fff;
 }
 
 .evaluation-warning:hover {
@@ -85,30 +92,63 @@
 /*------------------ RESPONSIVE DESIGN ------------------*/
 /*-------------------------------------------------------*/
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1350px) {
   #evaluation-section {
-    padding: 1rem 2rem;
-    display: block;
-  }
-
-  .evaluation-section-title {
-    margin-bottom: 2rem;
-    font-size: 1rem;
-  }
-
-  .evaluation-container {
-    grid-template-columns: auto;
-    justify-content: stretch;
-    align-items: stretch;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 2rem 4rem;
     display: grid;
   }
 
-  .evaluation-point {
-    font-size: 1rem;
+  .evaluation-section-title {
+    grid-column: span 2;
   }
 
   .evaluation-warning {
-    margin-top: 2rem;
+    grid-column: span 2;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .evaluation-warning {
+    font-size: 0.8rem;
+  }
+}
+
+@media all and (max-width: 960px) {
+  .evaluation-warning {
+    font-size: 0.65rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .evaluation-warning {
+    font-size: 0.5rem;
+  }
+}
+
+@media all and (max-width: 700px) {
+  #evaluation-section {
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    display: grid;
+  }
+
+  .evaluation-section-title {
+    grid-column: span 1;
+    font-size: 2rem;
+  }
+
+  .evaluation-section-title {
+    grid-column: span 1;
+  }
+
+  .evaluation-warning {
+    grid-column: span 1;
   }
 }
 
