@@ -1,0 +1,163 @@
+/*------------------------------------------------------------------*/
+/*-------------------------- STAFF STYLES --------------------------*/
+/*------------------------------------------------------------------*/
+
+#staff-section {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: stretch;
+  padding: 3rem 0;
+  display: grid;
+  gap: 2rem;
+}
+
+.staff-section-title {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 15px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  cursor: default;
+}
+
+.staff-row {
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: stretch;
+  display: grid;
+  gap: 2rem;
+}
+
+/*---------------------------------------------------------*/
+/*----------------------- CONTAINER -----------------------*/
+/*---------------------------------------------------------*/
+
+.staff-container {
+  background: linear-gradient(45deg, #0f226f 0%, #080020 100%);
+  grid-template-columns: auto;
+  justify-content: stretch;
+  box-shadow: 0 0 10px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2rem;
+  display: grid;
+  width: 400px;
+  gap: 1rem;
+}
+
+.staff-container:nth-of-type(4) {
+  grid-column: 1 / 3;
+}
+
+.staff-divider {
+  border-bottom: 2px solid #ffffff39;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+
+.staff-name {
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.staff-sub-name {
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.staff-teacher-link {
+  grid-template-columns: repeat(2, auto);
+  font-family: "Poppins", sans-serif;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.staff-teacher-name {
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.staff-teacher-image {
+  width: 20px;
+}
+
+.staff-link {
+  grid-template-columns: repeat(2, auto);
+  transition: background-color 450ms;
+  background-color: #ca1222;
+  box-shadow: 0 0 10px #000;
+  justify-content: center;
+  border-radius: 40px;
+  align-items: center;
+  margin-top: 0.25rem;
+  padding: 0.3rem 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.staff-link1 {
+  grid-template-columns: repeat(2, auto);
+  transition: background-color 450ms;
+  background-color: #fc3838;
+  box-shadow: 0 0 10px #000;
+  justify-content: center;
+  border-radius: 40px;
+  align-items: center;
+  margin-top: 0.25rem;
+  padding: 0.3rem 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.staff-link2 {
+  grid-template-columns: repeat(2, auto);
+  transition: background-color 450ms;
+  background-color: #fd6f6f;
+  box-shadow: 0 0 10px #000;
+  justify-content: center;
+  border-radius: 40px;
+  align-items: center;
+  margin-top: 0.25rem;
+  padding: 0.3rem 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.staff-link-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.staff-link-image {
+  width: 25px;
+}
+
+.staff-link:hover {
+  background-color: #9e002d;
+}
+
+.staff-link1:hover {
+  background-color: #9e002d;
+}
+
+.staff-link2:hover {
+  background-color: #9e002d;
+}
+
+/*-----------------------------------------------------------*/
+/*----------------------- END OF CSS  -----------------------*/
+/*-----------------------------------------------------------*/
