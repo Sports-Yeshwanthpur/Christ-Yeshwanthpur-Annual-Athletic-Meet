@@ -81,6 +81,37 @@
   scale: 1.1;
 }
 
+/*-------------------------------------------------------*/
+/*------------------ RESPONSIVE DESIGN ------------------*/
+/*-------------------------------------------------------*/
+
+@media all and (max-width: 500px) {
+  #evaluation-section {
+    padding: 1rem 2rem;
+    display: block;
+  }
+
+  .evaluation-section-title {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  .evaluation-container {
+    grid-template-columns: auto;
+    justify-content: stretch;
+    align-items: stretch;
+    display: grid;
+  }
+
+  .evaluation-point {
+    font-size: 1rem;
+  }
+
+  .evaluation-warning {
+    margin-top: 2rem;
+  }
+}
+
 /*--------------------------------------------------*/
 /*------------------- END OF CSS -------------------*/
 /*--------------------------------------------------*/

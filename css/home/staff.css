@@ -125,6 +125,36 @@
   background-color: #9e002d;
 }
 
+/*-------------------------------------------------------*/
+/*------------------ RESPONSIVE DESIGN ------------------*/
+/*-------------------------------------------------------*/
+
+@media all and (max-width: 500px) {
+  .staff-section-title {
+    font-size: 1rem;
+  }
+
+  .staff-row {
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: stretch;
+    display: grid;
+    gap: 2rem;
+  }
+
+  .staff-container {
+    width: 200px;
+  }
+
+  .staff-link-text {
+    font-size: 1rem;
+  }
+
+  .staff-link-image {
+    width: 20px;
+  }
+}
+
 /*-----------------------------------------------------------*/
 /*----------------------- END OF CSS  -----------------------*/
 /*-----------------------------------------------------------*/
