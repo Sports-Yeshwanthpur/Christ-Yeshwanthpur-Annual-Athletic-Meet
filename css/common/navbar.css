@@ -1,0 +1,86 @@
+/*-----------------------------------------------------------------*/
+/*------------------------- NAVBAR STYLES -------------------------*/
+/*-----------------------------------------------------------------*/
+
+nav {
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  background-color: #000055;
+  align-items: center;
+  padding: 2rem 4rem;
+  display: grid;
+}
+
+.navbar-image {
+  width: 150px;
+}
+
+.navbar-links-container {
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 2.5rem;
+}
+
+.navbar-link.events {
+  transition: background-color 450ms, scale 450ms;
+  border: 2px solid #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 40px;
+}
+
+.navbar-link h1 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  position: relative;
+  font-weight: 300;
+  color: #fff;
+}
+
+.navbar-link:not(.events) h1 {
+  transition: letter-spacing 450ms;
+}
+
+.navbar-link.events h1 {
+  transition: color 450ms;
+}
+
+.navbar-link:not(.events) h1:after {
+  background-color: #fff;
+  transition: width 450ms;
+  position: absolute;
+  margin: 0 auto;
+  height: 1.5px;
+  content: "";
+  width: 0%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/*-------------------------------------------*/
+/*--------------- TRANSITIONS ---------------*/
+/*-------------------------------------------*/
+
+.navbar-link:not(.events):hover h1 {
+  letter-spacing: 2px;
+}
+
+.navbar-link:not(.events):hover h1::after {
+  width: 100%;
+}
+
+.navbar-link.events:hover {
+  background-color: #fff;
+  scale: 1.1;
+}
+
+.navbar-link.events:hover h1 {
+  color: #000;
+}
+
+/*-----------------------------------------------------------*/
+/*----------------------- END OF CSS  -----------------------*/
+/*-----------------------------------------------------------*/

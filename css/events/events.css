@@ -1,0 +1,79 @@
+/*---------------------------------------------------------*/
+/*--------------------- EVENTS STYLES ---------------------*/
+/*---------------------------------------------------------*/
+
+#events-section {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 0;
+  display: grid;
+  gap: 2rem;
+}
+
+#events-section.races {
+  grid-template-columns: repeat(2, auto);
+}
+
+.events-section-title {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 10px;
+  font-size: 4.5rem;
+  cursor: default;
+}
+
+.events-section-title.races {
+  grid-column: span 2;
+}
+
+/*---------------------------------------------*/
+/*----------------- CONTAINER -----------------*/
+/*---------------------------------------------*/
+
+.events-list-container {
+  background: linear-gradient(45deg, #c83249, #23074d);
+  transition: translate 450ms;
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: stretch;
+  box-shadow: 0 0 10px;
+  border-radius: 10px;
+  padding: 2rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.events-list-divider {
+  border-bottom: 2px solid #ffffff3c;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+
+.events-list-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  cursor: default;
+  color: #fff;
+}
+
+.event-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #dcdcdc;
+  cursor: default;
+}
+
+/*------------------------------------------*/
+/*--------------- TRANSITION ---------------*/
+/*------------------------------------------*/
+
+.events-list-container:hover {
+  translate: 0 -10px;
+}
+
+/*--------------------------------------------------*/
+/*------------------- END OF CSS -------------------*/
+/*--------------------------------------------------*/

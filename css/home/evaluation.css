@@ -1,0 +1,86 @@
+/*-------------------------------------------------------------*/
+/*--------------------- EVALUATION STYLES ---------------------*/
+/*-------------------------------------------------------------*/
+
+#evaluation-section {
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  gap: 2rem 4rem;
+  display: grid;
+}
+
+.evaluation-section-title {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 10px;
+  grid-column: span 4;
+  text-align: center;
+  font-size: 5rem;
+  cursor: default;
+}
+
+/*---------------------------------------------*/
+/*----------------- CONTAINER -----------------*/
+/*---------------------------------------------*/
+
+.evaluation-container {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.evaluation-title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  cursor: default;
+  font-size: 2rem;
+}
+
+.evaluation-points-container {
+  background: linear-gradient(45deg, #11277f 0%, #080020 100%);
+  grid-template-columns: auto;
+  justify-content: center;
+  box-shadow: 0 0 10px;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.evaluation-point-divider {
+  border-bottom: 2px solid #ffffff3c;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+
+.evaluation-point {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  cursor: default;
+  color: #fff;
+}
+
+.evaluation-warning {
+  font-family: "Poppins", sans-serif;
+  transition: scale 450ms;
+  grid-column: span 4;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.evaluation-warning:hover {
+  scale: 1.1;
+}
+
+/*--------------------------------------------------*/
+/*------------------- END OF CSS -------------------*/
+/*--------------------------------------------------*/

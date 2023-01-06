@@ -1,0 +1,29 @@
+#timeline-section {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: stretch;
+  padding: 0px 0;
+  display: grid;
+  gap: 1rem;
+  margin-top: 3rem;
+
+}
+
+.timeline-section-title {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 25px;
+  text-align: center;
+  cursor: default;
+  font-size: 2rem;
+}
+
+.timeline-image {
+  transition: scale 450ms;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.timeline-image:hover {
+  scale: 1.05;
+}

@@ -1,0 +1,94 @@
+/*-----------------------------------------------------------------*/
+/*----------------------- REGULATION STYLES -----------------------*/
+/*-----------------------------------------------------------------*/
+
+#regulations-section {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.regulation-section-title {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 15px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  cursor: default;
+}
+
+.regulation-divider {
+  border-bottom: 2px solid #ffffff3e;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+
+/*-----------------------------------------------------*/
+/*--------------------- CONTAINER ---------------------*/
+/*-----------------------------------------------------*/
+
+.regulations-container {
+  background: linear-gradient(to right, #c83249, #23074d);
+  transition: translate 450ms;
+  grid-template-columns: auto;
+  justify-content: center;
+  box-shadow: 0 0 20px;
+  border-radius: 20px;
+  align-items: center;
+  padding: 2rem 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.regulations-container:nth-of-type(2) {
+  background: linear-gradient(to left, #c83249, #23074d);
+}
+
+.regulation-point {
+  grid-template-columns: repeat(2, auto);
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.regulation-point-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  cursor: default;
+  color: #fff;
+}
+
+.regulation-point-text span {
+  font-weight: 500;
+}
+
+.regulation-point-image {
+  width: 40px;
+}
+
+.regulation-or {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #989898;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: default;
+}
+
+/*-------------------------------------------------------*/
+/*--------------------- TRANSITIONS ---------------------*/
+/*-------------------------------------------------------*/
+
+.regulations-container:hover {
+  translate: 0 -10px;
+}
+
+/*----------------------------------------------------------*/
+/*----------------------- END OF CSS -----------------------*/
+/*----------------------------------------------------------*/

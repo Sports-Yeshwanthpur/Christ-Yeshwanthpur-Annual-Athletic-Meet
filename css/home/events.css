@@ -1,0 +1,114 @@
+/*---------------------------------------------------------------*/
+/*------------------------ EVENTS STYLES ------------------------*/
+/*---------------------------------------------------------------*/
+
+#events-section {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  display: grid;
+}
+
+.events-section-title {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 40px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  cursor: default;
+}
+
+.events-background {
+  object-fit: contain;
+  position: absolute;
+  opacity: 0.25;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.events-carousel {
+  grid-template-columns: repeat(3, auto);
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: hidden;
+  padding: 1rem 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.events-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.events-container {
+  animation: Carousel 8000ms infinite ease-in-out;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  background-color: #000;
+  box-shadow: 0 0 20px;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  display: grid;
+  width: 1100px;
+  z-index: 2;
+}
+
+.events-text-container {
+  grid-template-columns: auto;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  cursor: default;
+  display: grid;
+  width: 500px;
+  z-index: 2;
+}
+
+.events-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.events-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.events-link {
+  transition: background-color 450ms;
+  background-color: #ffff00;
+  padding: 0.5rem 4rem;
+  border-radius: 40px;
+  margin-top: 0.5rem;
+  width: fit-content;
+}
+
+.events-link-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.events-image {
+  position: relative;
+  width: 400px;
+  z-index: 1;
+}
+
+.events-link:hover {
+  background-color: #aaaa00;
+}
+
+/*--------------------------------------------------*/
+/*------------------- END OF CSS -------------------*/
+/*--------------------------------------------------*/

@@ -1,0 +1,18 @@
+@import url("./common/navbar.css");
+@import url("./timeline/time.css");
+
+* {
+  scroll-behavior: smooth;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  z-index: -2;
+}
+
+header {
+  box-shadow: 0 0 20px;
+}
