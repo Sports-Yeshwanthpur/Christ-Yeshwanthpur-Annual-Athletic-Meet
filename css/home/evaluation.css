@@ -70,7 +70,6 @@
 .evaluation-warning {
   background: linear-gradient(to right, #c83249, #23074d);
   font-family: "Poppins", sans-serif;
-  transition: scale 450ms;
   padding: 0.5rem 1rem;
   letter-spacing: 1px;
   grid-column: span 4;
@@ -78,14 +77,10 @@
   text-align: center;
   width: fit-content;
   font-weight: 500;
-  cursor: pointer;
+  cursor: default;
   font-size: 1rem;
   margin: 0 auto;
   color: #fff;
-}
-
-.evaluation-warning:hover {
-  scale: 1.1;
 }
 
 /*-------------------------------------------------------*/

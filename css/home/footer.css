@@ -1,4 +1,120 @@
+/*-------------------------------------------------------------*/
+/*----------------------- FOOTER STYLES -----------------------*/
+/*-------------------------------------------------------------*/
+
 footer {
   background-color: #000055;
+  grid-template-columns: auto;
+  justify-content: center;
+  box-shadow: 0 0 20px;
+  align-items: center;
   padding: 4rem 0;
+  display: grid;
+  gap: 1.5rem;
 }
+
+.footer-divider {
+  border-bottom: 1.5px solid #ffffff3a;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+
+.footer-links-container {
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+}
+
+.footer-link-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 450ms;
+  color: #ffffff80;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.creators-list-container {
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+}
+
+.creator-container {
+  background: linear-gradient(to right, #c83249, #3518d8);
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  box-shadow: 0 0 10px;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  border-radius: 5px;
+  cursor: default;
+  display: grid;
+  gap: 3rem;
+}
+
+.creator-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.creator-class {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: #fff;
+}
+
+/*--------------------------------------------------*/
+/*------------------- TRANSITION -------------------*/
+/*--------------------------------------------------*/
+
+.footer-link:hover .footer-link-text {
+  color: #fff;
+}
+
+/*-------------------------------------------------------------*/
+/*--------------------- RESPONSIVE DESIGN ---------------------*/
+/*-------------------------------------------------------------*/
+
+@media all and (max-width: 1200px) {
+  .creator-name {
+    font-size: 1rem;
+  }
+
+  .creator-class {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 805px) {
+  .creators-list-container {
+    grid-template-columns: auto;
+  }
+
+  .footer-link-text {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 490px) {
+  .footer-link-text {
+    font-size: 0.65rem;
+  }
+}
+
+@media all and (max-width: 490px) {
+  .footer-link-text {
+    font-size: 0.5rem;
+  }
+}
+
+/*------------------------------------------------------*/
+/*--------------------- END OF CSS ---------------------*/
+/*------------------------------------------------------*/

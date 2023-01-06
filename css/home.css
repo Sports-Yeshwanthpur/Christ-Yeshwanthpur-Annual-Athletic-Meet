@@ -6,6 +6,7 @@
 @import url("./home/staff.css");
 @import url("./home/regulations.css");
 @import url("./home/evaluation.css");
+@import url("./home/footer.css");
 
 * {
   scroll-behavior: smooth;
