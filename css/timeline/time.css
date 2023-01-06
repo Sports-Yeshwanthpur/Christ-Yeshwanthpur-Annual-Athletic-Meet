@@ -1,20 +1,23 @@
+/*-----------------------------------------------------------------*/
+/*-------------------------- TIME STYLES --------------------------*/
+/*-----------------------------------------------------------------*/
+
 #timeline-section {
   grid-template-columns: auto;
   justify-content: stretch;
   align-items: stretch;
-  padding: 0px 0;
+  margin-top: 3rem;
+  padding: 0 1rem;
   display: grid;
   gap: 1rem;
-  margin-top: 3rem;
-
 }
 
 .timeline-section-title {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 25px;
   text-align: center;
-  cursor: default;
   font-size: 2rem;
+  cursor: default;
 }
 
 .timeline-image {
@@ -24,6 +27,45 @@
   width: 1000px;
 }
 
+/*------------------------------------*/
+/*------------ TRANSITION ------------*/
+/*------------------------------------*/
+
 .timeline-image:hover {
   scale: 1.05;
 }
+
+/*-------------------------------------------------------*/
+/*------------------ RESPONSIVE DESIGN ------------------*/
+/*-------------------------------------------------------*/
+
+@media all and (max-width: 1100px) {
+  .timeline-image {
+    width: 800px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .timeline-section-title {
+    letter-spacing: 10px;
+    font-size: 1rem;
+  }
+
+  .timeline-image {
+    width: 400px;
+  }
+}
+
+@media all and (max-width: 440px) {
+  .timeline-section-title {
+    letter-spacing: 5px;
+  }
+
+  .timeline-image {
+    width: 300px;
+  }
+}
+
+/*----------------------------------------------------------*/
+/*----------------------- END OF CSS -----------------------*/
+/*----------------------------------------------------------*/

@@ -1,0 +1,25 @@
+/*-----------------------------------------------------*/
+/*------------------- RESULT STYLES -------------------*/
+/*-----------------------------------------------------*/
+
+#results-section {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 2rem;
+  display: grid;
+}
+
+.results-none-text {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #9d9d9d;
+  font-weight: 500;
+  font-size: 3rem;
+  cursor: default;
+}
+
+/*------------------------------------------------*/
+/*------------------ END OF CSS ------------------*/
+/*------------------------------------------------*/
