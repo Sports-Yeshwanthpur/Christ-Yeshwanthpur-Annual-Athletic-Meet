@@ -13,10 +13,13 @@
 }
 
 #navbar-mobile .navbar-image {
+  transition: scale 450ms;
+  cursor: pointer;
   width: 200px;
 }
 
 #navbar-mobile .navbar-menu-image {
+  transition: rotate 450ms;
   width: 60px;
 }
 
@@ -32,7 +35,7 @@
   display: grid;
   width: 250px;
   z-index: 10;
-  top: 8.5rem;
+  top: 11rem;
   gap: 1rem;
   right: 0;
   left: 0;
@@ -85,6 +88,10 @@
 /*--------------- TRANSITIONS ---------------*/
 /*-------------------------------------------*/
 
+#navbar-mobile .navbar-image:hover {
+  scale: 1.1;
+}
+
 #navbar-mobile .navbar-link:not(.events):hover h1 {
   letter-spacing: 2px;
 }
@@ -117,7 +124,7 @@
 @keyframes OpenMenu {
   0% {
     pointer-events: none;
-    translate: 0 -10px;
+    translate: 0 -15px;
     opacity: 0;
   }
 
@@ -137,7 +144,7 @@
 
   100% {
     pointer-events: none;
-    translate: 0 -10px;
+    translate: 0 -15px;
     opacity: 0;
   }
 }

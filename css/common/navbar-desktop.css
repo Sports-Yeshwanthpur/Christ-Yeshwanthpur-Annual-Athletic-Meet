@@ -12,6 +12,8 @@ nav {
 }
 
 .navbar-image {
+  transition: scale 450ms;
+  cursor: pointer;
   width: 225px;
 }
 
@@ -63,6 +65,10 @@ nav {
 /*-------------------------------------------*/
 /*--------------- TRANSITIONS ---------------*/
 /*-------------------------------------------*/
+
+.navbar-image:hover {
+  scale: 1.1;
+}
 
 .navbar-link:not(.events):hover h1 {
   letter-spacing: 2px;
