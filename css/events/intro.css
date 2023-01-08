@@ -30,6 +30,7 @@
 }
 
 .intro-background {
+  transition: scale 400ms;
   object-fit: contain;
   position: absolute;
   opacity: 0.25;
@@ -76,6 +77,7 @@
 /*-------------------------------------------------------*/
 
 .intro-link {
+  transition: background-color 450ms;
   background-color: #ffff00;
   padding: 0.5rem 4rem;
   border-radius: 40px;
@@ -92,6 +94,18 @@
 
 .intro-link-image {
   width: 20px;
+}
+
+/*-------------------------------------------------*/
+/*------------------ TRANSITIONS ------------------*/
+/*-------------------------------------------------*/
+
+.intro-link:hover {
+  background-color: #9b9b00;
+}
+
+.intro-container:hover .intro-background {
+  scale: 1.1;
 }
 
 /*-----------------------------------------------------*/

@@ -5,8 +5,8 @@
 #events-section {
   grid-template-columns: auto;
   justify-content: stretch;
+  padding: 4rem 0 1rem 0;
   align-items: stretch;
-  padding: 3rem 0;
   display: grid;
 }
 
@@ -19,34 +19,38 @@
   cursor: default;
 }
 
-.events-background {
-  object-fit: contain;
-  position: absolute;
-  opacity: 0.25;
-  width: 100%;
-  z-index: 1;
-  top: 0;
-}
-
 .events-carousel {
   grid-template-columns: repeat(3, auto);
+  padding: 1rem 2rem 2rem 2rem;
   justify-content: flex-start;
   align-items: center;
   overflow-y: hidden;
-  padding: 1rem 2rem;
   display: grid;
   gap: 2rem;
 }
 
 .events-carousel::-webkit-scrollbar {
-  display: none;
+  width: 2vw;
 }
+
+.events-carousel::-webkit-scrollbar-thumb {
+  background-color: #00005500;
+  border-radius: 40px;
+}
+
+.events-carousel::-webkit-scrollbar-track {
+  background-color: #e1e1e100;
+}
+
+/*---------------------------------------------------*/
+/*-------------------- CONTAINER --------------------*/
+/*---------------------------------------------------*/
 
 .events-container {
   animation: Carousel 8000ms infinite ease-in-out;
   grid-template-columns: repeat(2, auto);
-  justify-content: center;
   background-color: #000;
+  justify-content: center;
   box-shadow: 0 0 20px;
   align-items: center;
   border-radius: 20px;
@@ -80,12 +84,20 @@
   color: #fff;
 }
 
+.events-container:nth-of-type(3) .events-title {
+  font-size: 3.85rem;
+}
+
 .events-description {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 300;
   color: #fff;
 }
+
+/*--------------------------------------------*/
+/*------------------ BUTTON ------------------*/
+/*--------------------------------------------*/
 
 .events-link {
   transition: background-color 450ms;
@@ -99,8 +111,22 @@
 .events-link-text {
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #000;
+}
+
+/*--------------------------------------------*/
+/*------------------ IMAGES ------------------*/
+/*--------------------------------------------*/
+
+.events-background {
+  transition: scale 400ms;
+  object-fit: contain;
+  position: absolute;
+  opacity: 0.25;
+  width: 100%;
+  z-index: 1;
+  top: 0;
 }
 
 .events-image {
@@ -118,6 +144,22 @@
   width: 410px;
 }
 
+/*-------------------------------------------------*/
+/*------------------ TRANSITIONS ------------------*/
+/*-------------------------------------------------*/
+
+.events-carousel:hover::-webkit-scrollbar-thumb {
+  background-color: #00005530;
+}
+
+.events-carousel::-webkit-scrollbar-thumb:hover {
+  background-color: #000055;
+}
+
+.events-container:hover .events-background {
+  scale: 1.1;
+}
+
 .events-link:hover {
   background-color: #aaaa00;
 }
@@ -126,14 +168,117 @@
 /*--------------------- RESPONSIVE DESIGN ---------------------*/
 /*-------------------------------------------------------------*/
 
-@media all and (max-width: 860px) {
+@media all and (max-width: 1024px) {
+  .events-section-title {
+    letter-spacing: 30px;
+    font-size: 2rem;
+  }
+
+  .events-container {
+    width: 800px;
+  }
+
+  .events-image {
+    width: 300px;
+  }
+
+  .events-image.middle {
+    width: 360px;
+  }
+
+  .events-image.last {
+    width: 310px;
+  }
+
+  .events-container:nth-of-type(2) .events-text-container {
+    width: 450px;
+  }
+
+  .events-container:nth-of-type(2) .events-title {
+    font-size: 3.25rem;
+  }
+
+  .events-container:nth-of-type(2) .events-description {
+    font-size: 1.25rem;
+  }
+
+  .events-container:nth-of-type(3) .events-title {
+    font-size: 3.65rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .events-container {
+    width: 600px;
+  }
+
+  .events-container:nth-of-type(1) .events-text-container {
+    width: 350px;
+  }
+
+  .events-container:nth-of-type(1) .events-title {
+    font-size: 2.65rem;
+  }
+
+  .events-container:nth-of-type(1) .events-description {
+    font-size: 1rem;
+  }
+
+  .events-container:nth-of-type(2) .events-text-container {
+    width: 350px;
+  }
+
+  .events-container:nth-of-type(2) .events-title {
+    font-size: 2.65rem;
+  }
+
+  .events-container:nth-of-type(2) .events-description {
+    font-size: 1rem;
+  }
+
+  .events-container:nth-of-type(3) .events-text-container {
+    width: 350px;
+  }
+
+  .events-container:nth-of-type(3) .events-title {
+    font-size: 2.65rem;
+  }
+
+  .events-container:nth-of-type(3) .events-description {
+    font-size: 1rem;
+  }
+
+  .events-link {
+    padding: 0.5rem 4rem;
+    margin-top: 0.5rem;
+  }
+
+  .events-link-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+  }
+
+  .events-image {
+    width: 220px;
+  }
+
+  .events-image.middle {
+    width: 265px;
+  }
+
+  .events-image.last {
+    width: 225px;
+  }
+}
+
+@media all and (max-width: 500px) {
   .events-section-title {
     letter-spacing: 20px;
     font-size: 1.5rem;
   }
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 500px) {
   .events-section-title {
     letter-spacing: 10px;
     font-size: 1rem;

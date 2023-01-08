@@ -104,6 +104,10 @@
 }
 
 @media all and (max-width: 580px) {
+  #regulations-section {
+    padding: 2rem;
+  }
+
   .regulation-section-title {
     font-size: 1.25rem;
   }
