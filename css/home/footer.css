@@ -40,13 +40,23 @@ footer {
   grid-template-columns: repeat(3, auto);
   justify-content: center;
   align-items: center;
+  gap: 1.5rem 2rem;
   display: grid;
-  gap: 2rem;
+}
+
+.creators-list-title {
+  font-family: "Poppins", sans-serif;
+  grid-column: span 3;
+  text-align: center;
+  font-weight: 200;
+  cursor: default;
+  color: #fff;
 }
 
 .creator-container {
   background: linear-gradient(to right, #c83249, #3518d8);
   grid-template-columns: repeat(2, auto);
+  transition: translate 450ms;
   justify-content: center;
   box-shadow: 0 0 10px;
   padding: 0.5rem 1rem;
@@ -79,11 +89,19 @@ footer {
   color: #fff;
 }
 
+.creator-container:hover {
+  translate: 0 -10px;
+}
+
 /*-------------------------------------------------------------*/
 /*--------------------- RESPONSIVE DESIGN ---------------------*/
 /*-------------------------------------------------------------*/
 
 @media all and (max-width: 1200px) {
+  .creators-list-title {
+    font-size: 1.5rem;
+  }
+
   .creator-name {
     font-size: 1rem;
   }
@@ -98,20 +116,33 @@ footer {
     grid-template-columns: auto;
   }
 
+  .creators-list-title {
+    font-size: 1rem;
+  }
+
+  .creator-container {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .creators-list-title {
+    grid-column: span 1;
+  }
+
   .footer-link-text {
     font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 550px) {
+  footer {
+    padding: 4rem 2rem;
   }
 }
 
 @media all and (max-width: 490px) {
   .footer-link-text {
     font-size: 0.65rem;
-  }
-}
-
-@media all and (max-width: 490px) {
-  .footer-link-text {
-    font-size: 0.5rem;
   }
 }
 

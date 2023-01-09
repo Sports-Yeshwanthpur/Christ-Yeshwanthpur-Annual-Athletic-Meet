@@ -44,6 +44,7 @@
 .department-container {
   background: linear-gradient(45deg, #0f226f 0%, #080020 100%);
   grid-template-columns: auto;
+  transition: translate 450ms;
   justify-content: stretch;
   box-shadow: 0 0 10px;
   align-items: center;
@@ -65,6 +66,13 @@
   border-top: none;
 }
 
+.department-info-container {
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+}
+
 .department-name {
   font-family: "Poppins", sans-serif;
   width: fit-content;
@@ -82,6 +90,15 @@
   cursor: default;
   color: #fff;
 }
+
+.department-image {
+  transition: 450ms;
+  width: 150px;
+}
+
+/*-------------------------------------*/
+/*--------------- LINKS ---------------*/
+/*-------------------------------------*/
 
 .department-teacher-link {
   grid-template-columns: repeat(2, auto);
@@ -157,6 +174,18 @@
   width: 25px;
 }
 
+/*-------------------------------------------*/
+/*--------------- TRANSITIONS ---------------*/
+/*-------------------------------------------*/
+
+.department-container:hover {
+  translate: 0 -10px;
+}
+
+.department-container:hover .department-image {
+  scale: 1.1;
+}
+
 .department-link:hover {
   background-color: #9e002d;
 }
@@ -194,6 +223,10 @@
 }
 
 @media all and (max-width: 500px) {
+  .department-image {
+    width: 100px;
+  }
+
   .department-section-title {
     letter-spacing: 5px;
     margin-bottom: 0rem;

@@ -35,6 +35,7 @@
 .staff-container {
   background: linear-gradient(45deg, #0f226f 0%, #080020 100%);
   grid-template-columns: auto;
+  transition: translate 450ms;
   justify-content: stretch;
   box-shadow: 0 0 10px;
   align-items: center;
@@ -111,6 +112,14 @@
 
 .staff-link-image {
   width: 25px;
+}
+
+/*-------------------------------------------*/
+/*--------------- TRANSITIONS ---------------*/
+/*-------------------------------------------*/
+
+.staff-container:hover {
+  translate: 0 -10px;
 }
 
 .staff-link:hover {

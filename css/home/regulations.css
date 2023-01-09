@@ -94,6 +94,10 @@
 /*-------------------------------------------------------*/
 
 @media all and (max-width: 1050px) {
+  #regulations-section {
+    padding: 1.5rem 2rem;
+  }
+
   .regulation-point-text {
     font-size: 1rem;
   }
@@ -105,7 +109,7 @@
 
 @media all and (max-width: 580px) {
   #regulations-section {
-    padding: 2rem;
+    padding: 0 2rem;
   }
 
   .regulation-section-title {
