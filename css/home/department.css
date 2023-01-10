@@ -15,10 +15,22 @@
   font-family: "Montserrat", sans-serif;
   letter-spacing: 15px;
   margin-bottom: 2rem;
-  font-weight: 1000;
   text-align: center;
   font-size: 3rem;
   cursor: default;
+}
+
+.department-closed-text {
+  font-family: "Poppins", sans-serif;
+  transition: background-color 450ms;
+  background-color: #ca1222;
+  border-radius: 40px;
+  text-align: center;
+  padding: 0.25rem 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  cursor: default;
+  color: #fff;
 }
 
 .department-row:nth-of-type(1) {
@@ -124,43 +136,23 @@
 .department-link {
   grid-template-columns: repeat(2, auto);
   transition: background-color 450ms;
+  box-shadow: 0 0 10px #000;
   background-color: #ca1222;
-  box-shadow: 0 0 10px #000;
   justify-content: center;
   border-radius: 40px;
   align-items: center;
   margin-top: 0.25rem;
   padding: 0.3rem 0;
-  display: grid;
+  display: none;
   gap: 0.5rem;
 }
 
-.department-link1 {
-  grid-template-columns: repeat(2, auto);
-  transition: background-color 450ms;
+.department-link:nth-last-of-type(2) {
   background-color: #fc3838;
-  box-shadow: 0 0 10px #000;
-  justify-content: center;
-  border-radius: 40px;
-  align-items: center;
-  margin-top: 0.25rem;
-  padding: 0.3rem 0;
-  display: grid;
-  gap: 0.5rem;
 }
 
-.department-link2 {
-  grid-template-columns: repeat(2, auto);
-  transition: background-color 450ms;
+.department-link:nth-last-of-type(1) {
   background-color: #fd6f6f;
-  box-shadow: 0 0 10px #000;
-  justify-content: center;
-  border-radius: 40px;
-  align-items: center;
-  margin-top: 0.25rem;
-  padding: 0.3rem 0;
-  display: grid;
-  gap: 0.5rem;
 }
 
 .department-link-text {
@@ -184,6 +176,10 @@
 
 .department-container:hover .department-image {
   scale: 1.1;
+}
+
+.department-closed-text:hover {
+  background-color: #9e002d;
 }
 
 .department-link:hover {
