@@ -5,8 +5,8 @@
 #results-section {
   grid-template-columns: auto;
   justify-content: center;
+  padding: 1rem 0 1rem 0;
   align-items: center;
-  padding: 10rem 2rem;
   display: grid;
 }
 
@@ -18,6 +18,48 @@
   font-weight: 500;
   font-size: 3rem;
   cursor: default;
+}
+
+.results-link {
+  transition: scale 450ms, background-color 450ms;
+  grid-template-columns: repeat(2, auto);
+  background-color: #ca1222;
+  box-shadow: 0 0 5px #000;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+  align-items: center;
+  border-radius: 5px;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.results-link-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.results-link-image {
+  width: 30px;
+}
+
+/*-----------------------------------------*/
+/*-------------- TRANSITIONS --------------*/
+/*-----------------------------------------*/
+
+.results-link:hover {
+  background-color: #ae101e;
+  scale: 1.1;
+}
+
+/*-------------------------------------------------------*/
+/*------------------ RESPONSIVE DESIGN ------------------*/
+/*-------------------------------------------------------*/
+
+@media all and (max-width: 1350px) {
+  .results-link {
+    margin-top: -2rem;
+  }
 }
 
 /*------------------------------------------------*/
