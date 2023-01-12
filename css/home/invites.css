@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------*/
+/*----------------------- INVITES STYLES -----------------------*/
+/*--------------------------------------------------------------*/
+
+#invites-section {
+  grid-template-columns: auto;
+  background-color: #000;
+  justify-content: center;
+  box-shadow: 0 0 20px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0;
+  display: grid;
+  z-index: -1;
+}
+
+.invite-background {
+  position: absolute;
+  object-fit: cover;
+  opacity: 0.65;
+  z-index: -1;
+  top: 0;
+}
+
+.invite-image {
+  box-shadow: 0 0 20px;
+  border-radius: 5px;
+  width: 400px;
+}
+
+/*---------------------------------------*/
+/*------------- TRANSITIONS -------------*/
+/*---------------------------------------*/
+
+.invite-background {
+  scale: 1;
+}
+
+/*-------------------------------------------------------*/
+/*------------------ RESPONSIVE DESIGN ------------------*/
+/*-------------------------------------------------------*/
+
+@media all and (max-width: 1000px) {
+  .invite-image {
+    width: 300px;
+  }
+}
+
+/*------------------------------------------------*/
+/*------------------ END OF CSS ------------------*/
+/*------------------------------------------------*/
