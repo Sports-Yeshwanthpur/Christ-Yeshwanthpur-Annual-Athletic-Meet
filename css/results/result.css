@@ -5,60 +5,63 @@
 #results-section {
   grid-template-columns: auto;
   justify-content: center;
-  padding: 1rem 0 1rem 0;
+  padding: 5rem 0 2rem 0;
   align-items: center;
+  position: relative;
   display: grid;
+  gap: 2rem;
 }
 
-.results-none-text {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
+.results-section-title {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 10px;
   text-align: center;
-  color: #9d9d9d;
-  font-weight: 500;
-  font-size: 3rem;
-  cursor: default;
+  font-size: 4rem;
 }
 
-.results-link {
-  transition: scale 450ms, background-color 450ms;
-  grid-template-columns: repeat(2, auto);
-  background-color: #ca1222;
-  box-shadow: 0 0 5px #000;
-  justify-content: center;
-  padding: 0.5rem 2rem;
-  align-items: center;
-  border-radius: 5px;
-  display: grid;
-  gap: 0.5rem;
-}
-
-.results-link-text {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  color: #fff;
-}
-
-.results-link-image {
-  width: 30px;
-}
-
-/*-----------------------------------------*/
-/*-------------- TRANSITIONS --------------*/
-/*-----------------------------------------*/
-
-.results-link:hover {
-  background-color: #ae101e;
-  scale: 1.1;
+.results-table {
+  background: linear-gradient(to right, #c83249, #23074d);
+  border-radius: 10px;
+  padding: 0.2rem;
+  margin: 0 auto;
+  height: 900px;
+  width: 885px;
+  border: none;
 }
 
 /*-------------------------------------------------------*/
 /*------------------ RESPONSIVE DESIGN ------------------*/
 /*-------------------------------------------------------*/
 
-@media all and (max-width: 1350px) {
-  .results-link {
-    margin-top: -2rem;
+@media all and (max-width: 900px) {
+  .results-section-title {
+    font-size: 3rem;
+  }
+
+  .results-table {
+    width: 600px;
+  }
+}
+
+@media all and (max-width: 625px) {
+  .results-section-title {
+    font-size: 2rem;
+  }
+
+  .results-table {
+    width: 350px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .results-section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .results-table {
+    width: 300px;
   }
 }
 

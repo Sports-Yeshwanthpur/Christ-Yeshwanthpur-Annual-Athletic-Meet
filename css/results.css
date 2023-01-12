@@ -19,3 +19,7 @@ body {
 header {
   box-shadow: 0 0 20px;
 }
+
+iframe {
+  overflow: hidden;
+}
