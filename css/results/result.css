@@ -24,8 +24,8 @@
   border-radius: 10px;
   padding: 0.2rem;
   margin: 0 auto;
-  height: 455px;
-  width: 535px;
+  height: 350px;
+  width: 442px;
   border: none;
 }
 
@@ -34,8 +34,8 @@
   border-radius: 10px;
   padding: 0.2rem;
   margin: 0 auto;
-  height: 900px;
-  width: 1260px;
+  height: 930px;
+  width: 630px;
   border: none;
 }
 
@@ -43,7 +43,34 @@
 /*------------------ RESPONSIVE DESIGN ------------------*/
 /*-------------------------------------------------------*/
 
+@media all and (max-width: 740px) {
+  .results-section-title {
+    font-size: 3rem;
+  }
+}
 
+@media all and (max-width: 645px) {
+  .results-table {
+    width: 442px;
+  }
+}
+
+@media all and (max-width: 580px) {
+  #results-section {
+    padding: 3rem;
+  }
+
+  .results-section-title {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 475px) {
+  .deanery-table,
+  .results-table {
+    width: 300px;
+  }
+}
 
 /*------------------------------------------------*/
 /*------------------ END OF CSS ------------------*/

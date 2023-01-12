@@ -13,6 +13,7 @@
 
 .regulation-section-title {
   font-family: "Montserrat", sans-serif;
+  text-shadow: 0 6px 10px #00000080;
   letter-spacing: 15px;
   margin-bottom: 2rem;
   text-align: center;

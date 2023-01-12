@@ -1,0 +1,176 @@
+/*-----------------------------------------------------------*/
+/*------------------- INTRODUCTION STYLES -------------------*/
+/*-----------------------------------------------------------*/
+
+#introduction-section {
+  grid-template-columns: auto;
+  background-color: #000;
+  justify-content: center;
+  box-shadow: 0 0 20px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 0;
+  display: grid;
+  z-index: 0;
+  gap: 2rem;
+}
+
+.introduction-section-title {
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0 10px 10px #000;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 3rem;
+  cursor: default;
+  color: #fff;
+}
+
+.intro-back {
+  transition: scale 700ms;
+  position: absolute;
+  object-fit: cover;
+  opacity: 0.5;
+  z-index: -1;
+  top: 0;
+}
+
+/*---------------------------------------*/
+/*-------------- CONTAINER --------------*/
+/*---------------------------------------*/
+
+.introduction-container {
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+}
+
+.intro-image {
+  background: linear-gradient(
+    to right,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  box-shadow: 0 0 20px;
+  border-radius: 20px;
+  padding: 0.25rem;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.intro-video {
+  background: linear-gradient(
+    to right,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  box-shadow: 0 0 20px;
+  border-radius: 20px;
+  padding: 0.25rem;
+  margin: 0 auto;
+  height: 400px;
+  outline: none;
+  border: none;
+  width: 530px;
+}
+
+.intro-table {
+  background: linear-gradient(
+    to right,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  box-shadow: 0 0 20px;
+  border-radius: 20px;
+  position: relative;
+  padding: 0.25rem;
+  margin: 0 auto;
+  height: 400px;
+  outline: none;
+  border: none;
+  width: 530px;
+}
+
+/*---------------------------------------------*/
+/*---------------- TRANSITIONS ----------------*/
+/*---------------------------------------------*/
+
+#introduction-section:hover .intro-back {
+  scale: 1.05;
+}
+
+/*-------------------------------------------------------*/
+/*------------------ RESPONSIVE DESIGN ------------------*/
+/*-------------------------------------------------------*/
+
+@media all and (max-width: 1340px) {
+  .introduction-section-title {
+    font-size: 2rem;
+  }
+}
+
+@media all and (max-width: 1125px) {
+  .intro-video {
+    width: 400px;
+  }
+
+  .intro-table {
+    width: 400px;
+  }
+}
+
+@media all and (max-width: 815px) {
+  .introduction-section-title {
+    font-size: 2rem;
+  }
+}
+
+@media all and (max-width: 860px) {
+  #introduction-section {
+    background: linear-gradient(to right, #992133, #23074d);
+    color: #000000;
+  }
+
+  .introduction-container {
+    grid-template-columns: auto;
+  }
+
+  .intro-back {
+    display: none;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .introduction-section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 435px) {
+  .introduction-section-title {
+    font-size: 1rem;
+  }
+
+  .intro-video {
+    width: 300px;
+  }
+
+  .intro-table {
+    width: 300px;
+  }
+}
+
+/*------------------------------------------------*/
+/*------------------ END OF CSS ------------------*/
+/*------------------------------------------------*/

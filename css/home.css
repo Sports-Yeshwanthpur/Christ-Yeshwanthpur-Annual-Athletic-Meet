@@ -1,7 +1,7 @@
 @import url("./common/navbar-desktop.css");
 @import url("./common/navbar-mobile.css");
 
-@import url("./home/invites.css");
+@import url("./home/introduction.css");
 @import url("./home/events.css");
 @import url("./home/department.css");
 @import url("./home/staff.css");
@@ -23,6 +23,8 @@ body {
 
 header {
   box-shadow: 0 0 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .creators {

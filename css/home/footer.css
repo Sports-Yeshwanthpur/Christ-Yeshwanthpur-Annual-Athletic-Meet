@@ -20,6 +20,10 @@ footer {
   border-top: none;
 }
 
+/*-----------------------------------------*/
+/*------------ LINKS CONTAINER ------------*/
+/*-----------------------------------------*/
+
 .footer-links-container {
   grid-template-columns: repeat(5, auto);
   justify-content: center;
@@ -36,6 +40,10 @@ footer {
   font-weight: 200;
 }
 
+/*--------------------------------------------*/
+/*------------ CREATORS CONTAINER ------------*/
+/*--------------------------------------------*/
+
 .creators-list-container {
   grid-template-columns: repeat(3, auto);
   justify-content: center;
@@ -45,11 +53,12 @@ footer {
 }
 
 .creators-list-title {
+  text-shadow: 0 3px 4px #000000;
   font-family: "Poppins", sans-serif;
   grid-column: span 3;
   text-align: center;
-  font-weight: 200;
   font-size: 1.5rem;
+  font-weight: 200;
   cursor: default;
   color: #fff;
 }

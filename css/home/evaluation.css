@@ -13,6 +13,7 @@
 
 .evaluation-section-title {
   font-family: "Montserrat", sans-serif;
+  text-shadow: 0 6px 10px #00000080;
   letter-spacing: 10px;
   grid-column: span 4;
   text-align: center;
