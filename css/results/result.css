@@ -19,13 +19,23 @@
   font-size: 4rem;
 }
 
+.deanery-table {
+  background: linear-gradient(to right, #c83249, #23074d);
+  border-radius: 10px;
+  padding: 0.2rem;
+  margin: 0 auto;
+  height: 455px;
+  width: 535px;
+  border: none;
+}
+
 .results-table {
   background: linear-gradient(to right, #c83249, #23074d);
   border-radius: 10px;
   padding: 0.2rem;
   margin: 0 auto;
   height: 900px;
-  width: 885px;
+  width: 1260px;
   border: none;
 }
 
@@ -33,37 +43,7 @@
 /*------------------ RESPONSIVE DESIGN ------------------*/
 /*-------------------------------------------------------*/
 
-@media all and (max-width: 900px) {
-  .results-section-title {
-    font-size: 3rem;
-  }
 
-  .results-table {
-    width: 600px;
-  }
-}
-
-@media all and (max-width: 625px) {
-  .results-section-title {
-    font-size: 2rem;
-  }
-
-  .results-table {
-    width: 350px;
-  }
-}
-
-@media all and (max-width: 450px) {
-  .results-section-title {
-    font-size: 1.5rem;
-  }
-}
-
-@media all and (max-width: 360px) {
-  .results-table {
-    width: 300px;
-  }
-}
 
 /*------------------------------------------------*/
 /*------------------ END OF CSS ------------------*/

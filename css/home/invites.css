@@ -3,46 +3,100 @@
 /*--------------------------------------------------------------*/
 
 #invites-section {
-  grid-template-columns: auto;
+  background: linear-gradient(to right, #c83249, #23074d);
+  grid-template-columns: repeat(2, auto);
   background-color: #000;
   justify-content: center;
   box-shadow: 0 0 20px;
   align-items: center;
   position: relative;
   overflow: hidden;
+  margin-top: 2rem;
   padding: 4rem 0;
   display: grid;
-  z-index: -1;
-}
-
-.invite-background {
-  position: absolute;
-  object-fit: cover;
-  opacity: 0.65;
-  z-index: -1;
-  top: 0;
+  z-index: 0;
+  gap: 2rem;
 }
 
 .invite-image {
   box-shadow: 0 0 20px;
   border-radius: 5px;
-  width: 400px;
+  margin: 0 auto;
+  width: 300px;
 }
 
-/*---------------------------------------*/
-/*------------- TRANSITIONS -------------*/
-/*---------------------------------------*/
+.sports-video {
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.results-container {
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 /3;
+  display: grid;
+  gap: 1rem;
+}
+
+.deanery-table {
+  box-shadow: 0 0 20px;
+  position: relative;
+  border-radius: 5px;
+  margin: 0 auto;
+  height: 400px;
+  width: 530px;
+  z-index: 2;
+}
+
+.results-table {
+  box-shadow: 0 0 20px;
+  position: relative;
+  border-radius: 5px;
+  margin: 0 auto;
+  height: 500px;
+  width: 530px;
+  z-index: 2;
+}
 
 .invite-background {
-  scale: 1;
+  position: absolute;
+  object-fit: contain;
+  display: none;
+  opacity: 0.65;
+  z-index: -1;
+  top: 0;
 }
 
 /*-------------------------------------------------------*/
 /*------------------ RESPONSIVE DESIGN ------------------*/
 /*-------------------------------------------------------*/
 
-@media all and (max-width: 1000px) {
-  .invite-image {
+@media all and (max-width: 1080px) {
+  #invites-section {
+    grid-template-columns: auto;
+  }
+}
+
+@media all and (max-width: 560px) {
+  .sports-video {
+    width: 400px;
+  }
+
+  .deanery-table,
+  .results-table {
+    width: 400px;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .sports-video {
+    width: 300px;
+  }
+
+  .deanery-table,
+  .results-table {
     width: 300px;
   }
 }
