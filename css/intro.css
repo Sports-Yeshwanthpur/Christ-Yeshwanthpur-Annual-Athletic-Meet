@@ -1,0 +1,29 @@
+@import url("./common/navbar-desktop.css");
+@import url("./common/navbar-mobile.css");
+
+@import url("./introduction/introduction.css");
+@import url("./introduction/footer.css");
+
+* {
+  scroll-behavior: smooth;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  z-index: -2;
+}
+
+header {
+  box-shadow: 0 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.creators {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+}

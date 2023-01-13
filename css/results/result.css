@@ -16,6 +16,7 @@
   font-family: "Montserrat", sans-serif;
   letter-spacing: 10px;
   text-align: center;
+  cursor: default;
   font-size: 4rem;
 }
 
@@ -25,7 +26,7 @@
   padding: 0.2rem;
   margin: 0 auto;
   height: 350px;
-  width: 442px;
+  width: 590px;
   border: none;
 }
 
@@ -51,7 +52,13 @@
 
 @media all and (max-width: 645px) {
   .results-table {
-    width: 442px;
+    width: 415px;
+  }
+}
+
+@media all and (max-width: 615px) {
+  .deanery-table {
+    width: 450px;
   }
 }
 

@@ -52,6 +52,7 @@
   width: fit-content;
   font-size: 1.5rem;
   font-weight: 500;
+  cursor: default;
   color: #fff;
 }
 
