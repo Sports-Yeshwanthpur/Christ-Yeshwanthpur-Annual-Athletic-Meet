@@ -2,12 +2,13 @@
 /*-------------------- WINNERS STYLES --------------------*/
 /*--------------------------------------------------------*/
 
-#winners-section {
+#winners-section,
+#staff-section {
   grid-template-columns: repeat(2, auto);
   justify-content: center;
   align-items: flex-start;
   padding: 0rem 0 4rem 0;
-  display: none;
+  display: grid;
   gap: 3rem;
 }
 
@@ -96,7 +97,8 @@
 /*---------------------------------------------------------*/
 
 @media all and (max-width: 1160px) {
-  #winners-section {
+  #winners-section,
+  #staff-section {
     grid-template-columns: auto;
     gap: 2.5rem;
   }
