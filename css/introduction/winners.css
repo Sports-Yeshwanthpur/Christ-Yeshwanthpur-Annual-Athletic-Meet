@@ -14,7 +14,7 @@
 
 .winners-section-title {
   font-family: "Montserrat", sans-serif;
-  text-shadow: 0 6px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 6px 5px #00000080;
   letter-spacing: 10px;
   grid-column: span 2;
   text-align: center;
@@ -33,7 +33,7 @@
 
 .winners-event-title {
   font-family: "Poppins", sans-serif;
-  text-shadow: 0 6px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 6px 5px #0000004d;
   text-align: center;
   font-size: 2.5rem;
   font-weight: 500;
@@ -48,7 +48,7 @@
   background: linear-gradient(to right, #c83249, #23074d);
   grid-template-columns: auto;
   justify-content: center;
-  box-shadow: 0 0 20px;
+  box-shadow: 0 0 10px;
   align-items: center;
   border-radius: 5px;
   padding: 1.25rem 0;
@@ -114,12 +114,16 @@
     gap: 0.65rem;
   }
 
+  .winners-event-container {
+    gap: 2rem;
+  }
+
   .winners-event-title {
     font-size: 1.35rem;
   }
 
   .winners-event-sub-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .winners-name {
