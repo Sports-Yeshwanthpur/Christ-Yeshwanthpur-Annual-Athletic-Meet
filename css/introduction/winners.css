@@ -12,6 +12,10 @@
   gap: 3rem;
 }
 
+#staff-section {
+  display: none;
+}
+
 .winners-section-title {
   font-family: "Montserrat", sans-serif;
   text-shadow: 0 6px 5px #00000080;
