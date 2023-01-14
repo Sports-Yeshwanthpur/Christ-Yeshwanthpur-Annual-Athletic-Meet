@@ -1,0 +1,130 @@
+/*--------------------------------------------------------*/
+/*-------------------- WINNERS STYLES --------------------*/
+/*--------------------------------------------------------*/
+
+#winners-section {
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0rem 0 4rem 0;
+  display: none;
+  gap: 3rem;
+}
+
+.winners-section-title {
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0 6px 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 10px;
+  grid-column: span 2;
+  text-align: center;
+  font-weight: 600;
+  font-size: 5rem;
+  cursor: default;
+}
+
+.winners-event {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.winners-event-title {
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0 6px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  cursor: default;
+}
+
+/*----------------------------------------------------*/
+/*-------------------- EVENT LIST --------------------*/
+/*----------------------------------------------------*/
+
+.winners-event-container-list {
+  background: linear-gradient(to right, #c83249, #23074d);
+  grid-template-columns: auto;
+  justify-content: center;
+  box-shadow: 0 0 20px;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1.25rem 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+/*---------------------------------------------------*/
+/*----------------- EVENT CONTAINER -----------------*/
+/*---------------------------------------------------*/
+
+.winners-event-container {
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  display: grid;
+  gap: 3rem;
+}
+
+.winners-event-container-divider {
+  border-bottom: 2px solid #ffffff4d;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+
+.winners-event-sub-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  cursor: default;
+  color: #fff;
+}
+
+.winners-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+  cursor: default;
+  color: #fff;
+}
+
+/*---------------------------------------------------------*/
+/*------------------- RESPONSIVE DESIGN -------------------*/
+/*---------------------------------------------------------*/
+
+@media all and (max-width: 1160px) {
+  #winners-section {
+    grid-template-columns: auto;
+    gap: 2.5rem;
+  }
+
+  .winners-section-title {
+    grid-column: span 1;
+    font-size: 3rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .winners-event {
+    gap: 0.65rem;
+  }
+
+  .winners-event-title {
+    font-size: 1.35rem;
+  }
+
+  .winners-event-sub-title {
+    font-size: 1.5rem;
+  }
+
+  .winners-name {
+    font-size: 1rem;
+  }
+}
+
+/*--------------------------------------------------*/
+/*------------------- END OF CSS -------------------*/
+/*--------------------------------------------------*/

@@ -2,6 +2,7 @@
 @import url("./common/navbar-mobile.css");
 
 @import url("./introduction/introduction.css");
+@import url("./introduction/winners.css");
 @import url("./introduction/footer.css");
 
 * {
